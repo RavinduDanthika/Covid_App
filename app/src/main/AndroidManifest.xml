@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="lk.dev.covid_app">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -16,6 +18,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".HomeFragment"></activity>
+        <activity android:name=".EmergencyFragment"></activity>
+        <activity android:name=".GlobalCasesFragment"></activity>
+        <activity android:name=".LocalCases_hospitalsFragment"></activity>
+        <activity android:name=".LocalCasesFragment"></activity>
+
     </application>
 
 </manifest>
